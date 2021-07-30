@@ -1,22 +1,6 @@
 import React from "react";
 import './index.css';
-class admin extends React.Component {
-    constructor() {
-        super();
-        this.state = {};
-        this.onInputChange = this.onInputChange.bind(this);
-        this.onSubmitForm = this.onSubmitForm.bind(this);
-      }
-    
-      onInputChange(event) {
-        this.setState({
-          [event.target.name]: event.target.value
-        });
-      }
-    
-      onSubmitForm() {
-        this.props.onFormSubmit(this.state)
-      }
+class Admin extends React.Component {
       helloworld()
         {
             alert("All the Files have been uploaded to the ACT Cloud Library!");
@@ -42,4 +26,4 @@ class admin extends React.Component {
     )
 }
 }
-export default admin;
+export default Admin;

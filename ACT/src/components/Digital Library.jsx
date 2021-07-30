@@ -1,20 +1,24 @@
 import React from 'react';
 import './index.css';
-export default function DigitalLibrary() {
+class DigitalLibrary extends React.Component {
+    render(){
     return (
         <div>
-            <ul>
-                <li style={{float:"left", backgroundColor:"rgb(0, 0, 148)"}}>
-                <a href="login.jsx" method="POST" target="_blank">Sign In</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#ebooks">E-Books</a></li>
-                <li><a href="#magazines">Magazines</a></li>
-                <li><a href="#books">Books</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a class="active" href="#home">Home</a></li>
-            </ul>
+            <div class="navbar">
+                <ul> 
+                    <li style={{float:"left", backgroundColor:"rgb(0, 0, 148)"}}>
+                    <a href="/login" onClick="/login" method="POST" target="_blank">Sign In</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#ebooks">E-Books</a></li>
+                    <li><a href="#magazines">Magazines</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a class="active" href="#home">Home</a></li>
+                </ul>
+            </div>
 
-            <div style={{paddingLeft:"2rem",paddingRight:"2rem",paddingTop:"1rem",marginBottom:0,borderBottom: 0}}>
+           <div class="pad">
+           <div style={{paddingLeft:"2rem",paddingRight:"2rem",paddingTop:"1rem",marginBottom:0,borderBottom: 0}}>
                 <img src="./images/act.jpg" alt ="act" style={{width: "100%",paddingLeft:"1rem",paddingRight:"1rem",borderRadius:"100px"}}/>
             </div>
 
@@ -71,7 +75,10 @@ export default function DigitalLibrary() {
             <div class="space">
                 <hr style={{width: "90%", backgroundColor:"red",height: "10px",borderRadius:"10px",marginBottom: "2rem"}}/>
             </div>
+           </div>
    
         </div>
     );
 }
+}
+export default DigitalLibrary;

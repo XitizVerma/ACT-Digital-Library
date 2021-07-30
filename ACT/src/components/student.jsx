@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-export default class student extends React.Component() 
+export default class Student extends React.Component 
 {
     speed()
           {
@@ -24,8 +24,8 @@ export default class student extends React.Component()
     <div style={{fontFamily:"Courier New"}}>
         <br/>
         <ul>
-            <li><a href="Borrow.html" onclick="Borrow.html" >Borrowed Books</a></li>
-            <li><a class="active" href="#home">Profile</a></li>
+            <li><a href="/borrow">Borrowed Books</a></li>
+            <li><a class="active" href="/student">Profile</a></li>
         </ul>
 
         <h1 class="webkit" style={{color: "rgb(255, 238, 0)",textAlign:"center",fontSize:"5rem",margin:0}}>
