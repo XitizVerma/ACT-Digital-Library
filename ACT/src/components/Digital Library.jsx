@@ -13,7 +13,7 @@ class DigitalLibrary extends React.Component {
                     <li><a href="#magazines">Magazines</a></li>
                     <li><a href="#books">Books</a></li>
                     <li><a href="#news">News</a></li>
-                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a class="active" href="/">Home</a></li>
                 </ul>
             </div>
 
