@@ -1,6 +1,15 @@
 import React from 'react'
 import './index.css';
-export default function Borrow() {
+export default class Borrow extends React.Component {
+    speed()
+          {
+            alert("Machine Learning Book has been added to your Borrowing List.Kindly Checkout !");
+          }
+    speed2()
+          {
+            alert("Shareable Link is : https://integratedonlineedigitallibraryact.s3.ap-south-1.amazonaws.com/Machine+Learning+Algorithms+Simplified.pdf");
+          }
+    render(){
     return (
     <div>
         <div style={{fontFamily:"Courier New"}}>
@@ -16,16 +25,17 @@ export default function Borrow() {
             <section class="searchtext">Your Borrowed Books::</section><br/>
             <div style={{width: "50%",margin:"auto"}}>
                 <div class="gallery">
-                <a target="_blank" rel="noreferrer"
-                href="https://integratedonlineedigitallibraryact.s3.ap-south-1.amazonaws.com/Machine+Learning+Algorithms+Simplified.pdf">
-                    <img src="./images/ML.jpg" alt="ML" width="30%" height="400"/>
-                </a>
-                <div class="desc">Machine Learning</div>
-                <div class="speed" >Borrow</div>
-                <div class="speed2" >Share</div>
+                    <a target="_blank" rel="noreferrer"
+                    href="https://integratedonlineedigitallibraryact.s3.ap-south-1.amazonaws.com/Machine+Learning+Algorithms+Simplified.pdf">
+                        <img src="./images/ML.jpg" alt="ML" width="30%" height="400"/>
+                    </a>
+                    <div class="desc">Machine Learning</div>
+                    <div class="speed" onClick={this.speed}>Borrow</div>
+                    <div class="speed2" onclick={this.speed2}>Share</div>
                 </div>
             </div>
         </div>
     </div>
     );
+    }
 }

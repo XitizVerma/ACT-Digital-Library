@@ -28,18 +28,18 @@ export default class Login extends React.Component {
         var uid=this.state.uid;
         var pass=this.state.pass;
         var check=this.state.check;
-        if (uid == "yafet")
+        if (uid ==="yafet")
         {
-            if (pass=="12345678") 
+            if (pass==="12345678") 
             {
-                if(check=="tlogin")
+                if(check==="tlogin")
                 {
                     var win = window.open('/admin', '_self');
                     win.focus();
                 }
-                else if (check=="slogin")
+                else if (check==="slogin")
                 {
-                    var win = window.open('/student', '_blank');
+                    var win = window.open('/student', '_self');
                     win.focus();
                 }
             }      

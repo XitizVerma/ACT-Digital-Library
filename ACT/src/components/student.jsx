@@ -12,7 +12,7 @@ export default class Student extends React.Component
           }
     speed3()
           {
-            alert("Shareable Link is : https://integratedonlineedigitallibraryact.s3.ap-south-1.amazonaws.com/DevOps+Roadmap.jpg");
+            alert("Shareable Link is : https://integratedonlineedigitallibraryact.s3.ap-south-1.amazonaws.com/Machine+Learning+Algorithms+Simplified.pdf");
           }
     speed4()
           {
@@ -55,8 +55,8 @@ export default class Student extends React.Component
                 <img src="./images/ML.jpg" alt="ML" width="30%" height="400"/>
             </a>
             <div class="desc">Machine Learning</div>
-            <div class="speed" onclick={this.speed}>Borrow</div>
-            <div class="speed2" onclick={this.speed3}>Share</div>
+            <div class="speed" onClick={this.speed}>Borrow</div>
+            <div class="speed2" onClick={this.speed3}>Share</div>
         
         </div>
         
@@ -66,8 +66,8 @@ export default class Student extends React.Component
                 <img src="./images/DevOps.jpg" alt="DevOps" width="30%" height="400"/>
             </a>
             <div class="desc">DevOps RoadMap Journal</div>
-            <div class="speed" onclick={this.speed2}>Borrow</div>
-            <div class="speed2" onclick={this.speed4}>Share</div>
+            <div class="speed" onClick={this.speed2}>Borrow</div>
+            <div class="speed2" onClick={this.speed4}>Share</div>
         </div>
     </div>
     </div>
